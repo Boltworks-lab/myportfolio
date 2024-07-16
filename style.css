@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+:root{
+    --nav_color: rgb(17, 106, 123);
+    --light_brown: rgb(205, 194, 174);
+    --Sky_blue: rgb(179, 222, 229);
+    --accent: rgb(225, 161, 1);
+    --black: rgb(36, 36, 36);
+    --ash: rgb(80, 92, 124);
+    --dark_ash: rgb(40, 46, 60);
+    --button_color: rgb(17, 106, 123);
+    --popupbg: rgb(255, 255, 255);
+    --popupbg_clr:rgb(17, 106, 123);
+    --popupbtn: rgb(17, 106, 123);
+    --popupimg: rgb(17, 106, 123);
+    --popupbtn_clr: rgb(255, 255, 255);
+    --ftcolr: rgb(17, 106, 123);
+    --main_color:rgb(255, 255, 255);
+    --main_text: rgb(36, 36, 36);
+}
+.dark-theme{
+    --Sky_blue: rgb(80, 92, 124);
+    --accent: rgb(253, 255, 0);
+    --black: rgb(36, 36, 36);
+    --ash: rgb(80, 92, 124);
+    --dark_ash: rgb(40, 46, 60);
+    --nav_color: rgb(255, 255, 255);
+    --button_color: rgb(17, 106, 123);
+    --popupbg: rgb(40, 46, 60);
+    --popupbg_clr:rgb(255, 255, 255);
+    --popupbtn: rgb(253, 255, 0);
+    --popupimg: rgb(40, 46, 60);
+    --popupbtn_clr: rgb(40, 46, 60);
+    --ftcolr: rgb(40, 46, 60);
+    --light_brown: rgb(80, 92, 124);
+    --main_color:rgb(40, 46, 60);
+    --main_text: rgb(255, 255, 255);
+}
+body{
+    width:100%;
+    height:100%;   
+}
+.main{
+    background-color: var(--main_color);
+}
+/* .mode{
+    position:absolute;
+    left:40rem; 
+} */
+
+.header >a > img{
+    margin-top: 3rem;
+    width: 138px;
+    height: 70px;
+    margin-bottom: 2rem;
+}
+.navbar-nav > li > a{
+    color: var(--nav_color);
+}
+.navbar-nav > li > a:hover {
+    color: var(--accent);
+}
+.navbar-nav{
+    gap: 2rem;
+}
+.navbar{
+    margin-top: -2rem;
+    margin-bottom: -2rem;
+}
+.portfolio-image{
+    height:500px;
+    width: 100%;
+    transform: scale(0.9);
+    margin-top: -1rem;
+    display:block;
+    z-index: 999;
+    cursor:pointer;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+ .portfolio-image:hover{
+        transform:scale(1);
+    }
+
+/* .intro-wrapper{
+    width:100%;
+    display: flex;
+} */
+
+
+
+.intro > h1{
+    font-size: 84px;
+}
+.intro > h1,p{
+    color: var(--main_text);
+}
+.intro>h3{
+    color: var(--main_text);
+}
+
+.click{
+    background-color: var(--button_color);
+    color: rgb(255, 255, 255);
+    padding: 1rem 1.5rem;
+    width: 13rem;
+    border:none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.click:hover{
+    background-color: var(--accent);
+    color: var(--black);
+}
+
+.about-me{
+    width: 100%;
+    height:100%;
+    margin-bottom: 4rem;
+    padding-top: 2rem;
+    background: var(--light_brown);
+}
+
+.about-me>p{
+    color: var(--main_text);
+}
+#aboutme{
+    color: var(--main_text);
+}
+.skill-row{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+} 
+#stack{
+    color: var(--main_text);
+}
+#skill{
+    color: var(--main_text);
+}
+#exp{
+    color: var(--main_text);
+}
+
+.skill-body{
+    background-color: var(--Sky_blue);
+    color: var(--text_color);
+
+}
+.skills-wrapper{
+    width:100%;
+    display:flex;
+    gap:2rem;
+}
+.experience{
+    width: 60%;
+    display: flex;
+    gap:1rem;
+}
+
+.guage{
+    width:15rem;
+    height: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+.guage-score{
+    width:10rem;
+    height:1rem;
+    background-color: var(--button_color);
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+#portfolio>h2{
+    color: var(--main_text);
+}
+.mockup{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5rem;
+}
+.mockup-wrapper{
+    display: flex;
+}
+.mockup1{
+    display: flex;
+    gap: 1rem;
+    height:30rem;
+    width:100%;
+    align-items: start;
+}
+.img1{
+    width:100%;
+    height:20rem;
+}
+.img1-1{
+    width:100%;
+    height:20rem;
+}
+.mockup2{
+    display: flex;
+    gap: 0.5rem;
+    height:20rem;
+    align-items: start;
+}
+.mockup2>img{
+    width:100%;
+    height:20rem;
+}
+.f-bg{
+    background-color: rgba(0,0,0,0.9); 
+    width: 100%;
+    color: rgba(255, 255, 255, 0.7);
+} 
+
+.f-bgimg{
+    width: 100%;
+    height: 40rem;
+    padding: 5rem;
+    background-image: url(./images/footer-image.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+.work{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 12rem;
+}
+.work>p{
+    color: rgba(255, 255, 255, 0.7);
+}
+.socials{
+    display: flex;
+    gap:2rem;
+    align-items: center;
+}
+.socials>p{
+    color: rgba(255, 255, 255, 0.7);
+}
+.socials img{
+    scale: 1.5;
+}
+.social-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+footer{
+    background: var(--ftcolr);
+}
+/* .footer-content{
+    display: flex;
+    justify-content: space-between;
+
+} */
+.ft_text{
+    color: rgb(255, 255, 255);
+}
+.footer-logo{
+    align-items: start;
+    width: 138px;
+    height: 70px;
+}
+.icon-next{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.date{
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+}
+.cv{
+    background-color: var(--Sky_blue);
+}
+.contactUs{
+    position: relative;
+}
+.popup{
+    width: 400px;
+    background: var(--popupbg);
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: var(--popupbg_clr); 
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background: var(--popupimg);
+
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: var(--popupbtn);
+    color: var(--popupbtn_clr);
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup button:hover{
+    background-color: var(--accent);
+    color: var(--black);
+}
