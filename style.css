@@ -373,7 +373,7 @@ footer{
     }
 }
 
-@media (max-width:575px){
+@media (max-width:475px){
     .portfolio-image{
         display:none;
     }
@@ -382,15 +382,15 @@ footer{
         background-repeat: no-repeat;
         background-size: 100%;
         width:100%;
-        background-position-x: -130px;
-        background-position-y: -80px;
+        background-position-x: -125px;
+        background-position-y: -90px;
     }
     .head > img {
         height:100%;
     }
     .intro h1, .intro h3{
         display: block;
-        margin-left:10rem;
+        margin-left:8rem;
     }
     .intro button{
         margin-top: -0.3rem;
