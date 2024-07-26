@@ -6,6 +6,7 @@ var submitError = document.getElementById('submit-error');
 let popup = document.getElementById('popup');
 let themeIcon = document.getElementById('theme-icon');
 
+
 function validateName(){
     var name = document.getElementById('fName').value;
 

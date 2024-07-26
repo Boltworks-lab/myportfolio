@@ -352,3 +352,48 @@ footer{
     background-color: var(--accent);
     color: var(--black);
 }
+@media (min-width:768px) and (max-width:991px){
+    .intro{
+        margin-left:22rem;
+        margin-top:-20rem;
+    }
+    .portfolio-image{
+        display: none;
+    }
+    .head{
+        background-image: url(./images/portfolio\ image\ tablet\ copy.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width:100%;
+        background-position-x: -250px;
+        background-position-y:-150px ;
+    }
+    .intro button{
+        margin-top: -0.3rem;
+    }
+}
+
+@media (max-width:575px){
+    .portfolio-image{
+        display:none;
+    }
+    .head{
+        background-image: url(./images/portfolio\ image\ copy.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width:100%;
+        background-position-x: -130px;
+        background-position-y: -80px;
+    }
+    .head > img {
+        height:100%;
+    }
+    .intro h1, .intro h3{
+        display: block;
+        margin-left:10rem;
+    }
+    .intro button{
+        margin-top: -0.3rem;
+    }
+    }
+    
