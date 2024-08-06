@@ -99,7 +99,7 @@ function validateText(){
         if (currentMode === 'light'){
             localStorage.setItem('mode', 'dark');
             document.body.classList.add('dark-theme');
-            themeIcon.src = "/Icons/icons8-sun-32 (1).png";
+            themeIcon.src = "/Icons/icons8-sun-32 (1).png"; 
         
         }
         else{
