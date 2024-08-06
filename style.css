@@ -59,6 +59,7 @@ body{
     height: 70px;
     margin-bottom: 2rem;
 }
+
 .navbar-nav > li > a{
     color: var(--nav_color);
 }

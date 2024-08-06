@@ -94,33 +94,25 @@ function validateText(){
         submitError.innerHTML = "";   
     }
 
-
-    // const theme = localStorage.getItem('theme');
-    // theme && document.body.classList.add('theme') && themeIcon.src;
-
-    // let mode = localStorage.getItem('mode');
-    // const darkMode = () =>{
-    //     document.body.classList.add('dark-theme');
-    //     localStorage.setItem('mode', 'dark-theme');
-    // }
-    // if (mode === "dark-theme"){
-    //     darkMode();
-    //     themeIcon.src = "/Icons/icons8-moon-30.png";
-    // }
-
-
-    //themeIcon.addEventListener('click', () =>{
-    //document.body.classList.toggle('dark-theme');
-    //if (document.body.classList.contains('dark-theme')) {
-    //         localStorage.setItem('theme', 'dark-theme');
-    //themeIcon.src = "/Icons/icons8-sun-32.png";
-
-    //} else{
-    //         localStorage.removeItem('theme');
-    //themeIcon.src = "/Icons/icons8-moon-30.png";
-
-    //    }
+    function toggleMode(){
+        let currentMode = localStorage.getItem('mode');
+        if (currentMode === 'light'){
+            localStorage.setItem('mode', 'dark');
+            document.body.classList.add('dark-theme');
+            themeIcon.src = "/Icons/icons8-sun-32 (1).png";
         
-    //});
+        }
+        else{
+            localStorage.setItem('mode', 'light');
+            document.body.classList.remove('dark-theme');
+            themeIcon.src = "/Icons/icons8-sun-32.png";
+        }
+    }
+    themeIcon.addEventListener('click', toggleMode);
+      currentMode = localStorage.getItem('mode');
+     if (currentMode === 'dark'){
+         document.body.classList.add('dark-theme');
+         themeIcon.src = "/Icons/icons8-sun-32 (1).png";
+     }
 
     
