@@ -43,7 +43,8 @@ function validatePhone(){
 function validateEmail(){
     var email = document.getElementById('email').value;
     if(email.length == 0){
-        emailError.innerHTML = 'Enter email'
+        emailError.innerHTML = 'Enter email';
+        return false;
     }
     if(!email.match(/^[a-zA-Z0-9_-]+@[a-zA-Z]+\.[a-zA-Z]{2,4}$/)){
         emailError.innerHTML = 'Email format invalid'
@@ -94,25 +95,25 @@ function validateText(){
         submitError.innerHTML = "";   
     }
 
-    function toggleMode(){
-        let currentMode = localStorage.getItem('mode');
-        if (currentMode === 'light'){
-            localStorage.setItem('mode', 'dark');
-            document.body.classList.add('dark-theme');
-            themeIcon.src = "/Icons/icons8-sun-32 (1).png"; 
+    // function toggleMode(){
+    //     let currentMode = localStorage.getItem('mode');
+    //     if (currentMode === 'light'){
+    //         localStorage.setItem('mode', 'dark');
+    //         document.body.classList.add('dark-theme');
+    //         themeIcon.src = "/Icons/icons8-sun-32 (1).png"; 
         
-        }
-        else{
-            localStorage.setItem('mode', 'light');
-            document.body.classList.remove('dark-theme');
-            themeIcon.src = "/Icons/icons8-sun-32.png";
-        }
-    }
-    themeIcon.addEventListener('click', toggleMode);
-      currentMode = localStorage.getItem('mode');
-     if (currentMode === 'dark'){
-         document.body.classList.add('dark-theme');
-         themeIcon.src = "/Icons/icons8-sun-32 (1).png";
-     }
+    //     }
+    //     else{
+    //         localStorage.setItem('mode', 'light');
+    //         document.body.classList.remove('dark-theme');
+    //         themeIcon.src = "/Icons/icons8-sun-32.png";
+    //     }
+    // }
+    // themeIcon.addEventListener('click', toggleMode);
+    //   currentMode = localStorage.getItem('mode');
+    //  if (currentMode === 'dark'){
+    //      document.body.classList.add('dark-theme');
+    //      themeIcon.src = "/Icons/icons8-sun-32 (1).png";
+    //  }
 
     

@@ -215,14 +215,14 @@
     <form action="#" class="p-5 form contactUs" method="post" id="myForm">
         <h5>Send me an e-mail</h5>
         <label class="form-label" for="fName">Full Name</label>
-        <input class="form-control" type="text" id="fName" name="fName" onkeyup="validateName()"  >
+        <input class="form-control" type="text" id="fName" name="fName" onkeyup="validateName()">
         <span id="name-error" class="valid d-block mb-3 text-danger"></span>
 
         <label class="form-label" for="email">Email</label>
         <input class="form-control" type="email" id="email" name="email" onkeyup="validateEmail()">
         <span id="email-error" class="valid d-block mb-3 text-danger" ></span>
 
-        <label class="form-label" for="number">Phone Number</label>
+        <label class="form-label" for="phone">Phone Number</label>
         <input class="form-control" type="tel" id="phone" name="phone" onkeyup="validatePhone()">
         <span id="phone-error" class="valid d-block mb-3 text-danger" ></span>
 
@@ -232,6 +232,8 @@
 
         <button onclick="return validateForm()"  class="form-btn" type="button">Submit</button>
     <span id="submit-error" class="valid text-danger"></span>
+
+    <!-- success pop-up message box -->
     <div class="popup" id="popup">
         <img src="./Icons/icon-checkmark.svg" alt="">
         <h2>Thank You!</h2>
